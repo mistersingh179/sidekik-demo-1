@@ -16,14 +16,14 @@ This project is using `hardhat` to setup the EVM chain and then `hardhat-deploy`
 
 ## Commands
 
-- Use `npm chain` to start the hardhat chain
-- Use `npm deploy` to watch code for changes & deploying them
+- Use `npm run chain` to start the hardhat chain
+- Use `npm run deploy` to watch code for changes & deploying them
 
 ## Usage with app.sidekik.xyz
 
 - Run your project localy
-- Open `app.sidekik.xyz` 
-- Upload your contract-addresses.json
+- Open https://app.sidekik.xyz 
+- Upload your `contract-addresses.json`
 
 That's it. Sidekik will poll and monitor this file for changes, and when it changes, it will update the contract UI in real time.
 

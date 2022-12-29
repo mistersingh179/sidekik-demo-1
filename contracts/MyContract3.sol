@@ -12,6 +12,20 @@ contract MyContract3 is Ownable {
     mapping(address => uint) public balances;
     event Transfer(address from, address to, uint amount);
 
+    //    IERC20 public UsdcContract = IERC20(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48);
+    //    uint public amountToCharge = 1 * 10^6;
+
+    //    function setName(string memory input) public {
+    //        uint allowanceGiven = UsdcContract.allowance(msg.sender, address(this));
+    //        require(allowanceGiven > amountToCharge, "USDC approval missing");
+    //        uint yourBalance = UsdcContract.balanceOf(msg.sender);
+    //        require(yourBalance >= amountToCharge, "you dont have enough money!!");
+    //        UsdcContract.transferFrom(msg.sender, address(this), 1 * 10**6);
+    //        name = input;
+    //    }
+
+    //    mapping(address => uint) public bal;
+
     function updateName(bytes32 newNameInBytes) public{
         name = string(abi.encode(newNameInBytes));
     }
